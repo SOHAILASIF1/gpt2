@@ -1,0 +1,53 @@
+.gpt-feature{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+}
+.gpt-feature-heading{
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: left;
+    margin-right: 5rem;
+
+}
+.gpt-feature-heading p{
+    margin-top: 1rem;
+    color: red;
+}
+.gpt-feature-container text{
+    color: var(--color-text);
+
+}
+.gpt-feature-heading h1{
+    font-family: var(--font-family);
+    font-size: 34px;
+    line-height: 45px;
+}
+.gpt-feature-container{
+    flex: 1.5;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+@media screen and (max-width:990px) {
+    .gpt-feature{
+        flex-direction: column;
+
+    
+}
+    .gpt-feature-heading{
+        margin: 0 0 2rem 0;
+    }
+}
+@media screen and (max-width:550px) {
+    .gpt-feature-heading h1{
+        font-size: 26px;
+        line-height: 36px;
+    }
+}

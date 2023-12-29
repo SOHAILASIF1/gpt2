@@ -1,0 +1,107 @@
+.gpt-whatgpt{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    background: var(--color-footer);
+    background: radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+
+}
+.gpt-whatgpt-feature{
+    display: flex;
+    flex-direction: row;
+
+}
+.gpt-whatgpt-feature .gpt-whatgpt-container{
+    margin: 0;
+}
+.gpt-whatgpt-feature .gpt-feature-container-feature-text{
+    max-width: 700px;
+}
+.gpt-whatgpt-heading{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4rem 0 2rem;
+
+
+}
+.gpt-whatgpt-heading h1{
+    font-family: var(--font-family);
+    font-size: 34px;
+    line-height: 45px;
+    max-width: 510px;
+
+}
+.gpt-whatgpt-heading p{
+    font-family: var(--font-family);
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--color-subtext);
+
+
+.gpt-whatgpt-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 1rem;
+}
+}
+.gpt-whatgpt-container .gpt-feature-container-feature {
+    flex: 1;
+    margin: 1rem;
+    min-width: 210px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Customizing feature component as per needs */
+.gpt-whatgpt-container .gpt-feature-container-feature-text {
+    margin-top: 0.5rem;
+}
+
+@media screen and (max-width: 850px) {
+    .gpt-whatgpt-heading {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 0rem;
+    }
+
+    .gpt-whatgpt-heading p {
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    /* Customizing feature component as per needs */
+    .gpt-whatgpt-feature .gpt-feature-container-feature {
+        flex-direction: column;
+    }
+
+    /* Customizing feature component as per needs */
+    .gpt-whatgpt3-feature .gpt-feature-container-feature-text {
+        margin-top: 0.5rem;
+    }
+
+    .gpt-whatgpt-heading h1 {
+        font-size: 28px;
+        line-height: 40px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    /* Customizing feature component as per needs */
+    .gpt-whatgpt-container .gpt-feature-container-feature {
+        margin: 1rem 0;
+        min-width: 100%;
+    }
+    .gpt-whatgpt-heading h1 {
+        font-size: 20px;
+        line-height: 40px;
+    }
+    .gpt-whatgpt-heading h1 {
+        font-size: 8px;
+        line-height: 10px;
+    }
+    
+}

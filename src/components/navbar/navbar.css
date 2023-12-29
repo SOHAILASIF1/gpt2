@@ -1,0 +1,122 @@
+.gpt-navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 6rem;
+}
+.gpt-navbar-links{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.gpt-navbar-links-logo{
+    margin-right: 2rem;
+
+
+}
+.gpt-navbar-links-logo img{
+    width: 62px;
+    height: 20px;
+}
+
+.gpt-navbar-links-container{
+    display: flex;
+    flex-direction: row;
+        
+}
+.gpt-navbar-sign{
+    display: flex;
+        justify-content: flex-end;
+        align-items: center;
+}
+.gpt-navbar-links-container p,
+.gpt-navbar-sign p,
+.gpt-navbar-menu-container p{
+    color: #fff;
+    font-family: var(--font-family);
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 25px;
+    text-transform: capitalize;
+    margin: 0 1rem;
+    cursor: pointer;
+}
+.gpt-navbar-sign button,
+.gpt-navbar-menu-container button{
+    padding: 0.5rem 1rem;
+    color: #fff;
+    background: #ff4820;
+    font-family: var(--font-family);
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+    border-radius: 10px;
+    outline: none;
+}
+.gpt-navbar-menu{
+    margin-left: 1rem;
+    display: none;
+    position: relative;
+
+}
+.gpt-navbar-menu svg{
+    cursor: pointer;
+}
+.gpt-navbar-menu-container{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: end;
+    background: var(--color-footer);
+    padding: 2rem;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    margin-top: 1rem;
+    min-width: 210px;
+    box-shadow: 0 0 5 rgba(0, 0, 0, 0.9) ;
+    
+}
+.gpt-navbar-menu-container p{
+    margin: 1rem 0;
+}
+.gpt-navbar-menu-container-links-signin{
+    display: none;
+}
+@media screen and (max-width:1050px) {
+    .gpt-navbar-links-container{
+        display: none;
+    }
+    .gpt-navbar-menu{
+        display: flex;
+    }
+    
+}
+@media screen and (max-width:700px) {
+    .gpt-navbar{
+        padding: 2rem 4rem;
+    }
+    
+}
+@media screen and (max-width:500px) {
+    .gpt-navbar{
+        padding: 2rem ;
+    }
+    .gpt-navbar-sign{
+        display: none;
+    }
+    .gpt-navbar-menu-container-links-signin{
+        display: block;
+    }
+    .gpt-navbar-menu-container{
+        top: 20px;
+        right: 0;
+    }
+    
+    
+}
+
+
